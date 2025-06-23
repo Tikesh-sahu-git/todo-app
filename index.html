@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering To-Do App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="themes.css" id="theme-style">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="app-header">
+            <h1><i class="fas fa-tasks"></i> Engineering To-Do</h1>
+            <button id="theme-toggle" class="theme-btn">
+                <i class="fas fa-moon"></i> Dark Mode
+            </button>
+        </header>
+
+        <div class="input-section">
+            <input type="text" id="task-input" placeholder="Enter task (e.g., 'Review CAD design')">
+            <input type="text" id="project-input" placeholder="Project (e.g., 'Bridge Construction')">
+            <select id="priority-select">
+                <option value="low">Low Priority</option>
+                <option value="medium" selected>Medium Priority</option>
+                <option value="high">High Priority</option>
+                <option value="critical">Critical</option>
+            </select>
+            <button id="add-task-btn"><i class="fas fa-plus"></i> Add Task</button>
+        </div>
+
+        <div class="filter-section">
+            <div class="filter-group">
+                <label for="project-filter">Filter by Project:</label>
+                <select id="project-filter">
+                    <option value="all">All Projects</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="priority-filter">Filter by Priority:</label>
+                <select id="priority-filter">
+                    <option value="all">All Priorities</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                    <option value="critical">Critical</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="status-filter">Filter by Status:</label>
+                <select id="status-filter">
+                    <option value="all">All Tasks</option>
+                    <option value="pending">Pending</option>
+                    <option value="completed">Completed</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="stats-section">
+            <div class="stat-card">
+                <h3>Total Tasks</h3>
+                <p id="total-tasks">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Completed</h3>
+                <p id="completed-tasks">0</p>
+            </div>
+            <div class="stat-card">
+                <h3>Pending</h3>
+                <p id="pending-tasks">0</p>
+            </div>
+            <div class="stat-card critical">
+                <h3>Critical</h3>
+                <p id="critical-tasks">0</p>
+            </div>
+        </div>
+
+        <div class="task-list">
+            <ul id="task-list">
+                <!-- Tasks will be added here dynamically -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

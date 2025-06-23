@@ -1,0 +1,58 @@
+/* Default theme (dark) is in styles.css */
+
+/* Light Theme */
+.light-theme {
+    --primary-color: #3498db;
+    --secondary-color: #ecf0f1;
+    --accent-color: #2980b9;
+    --text-color: #2c3e50;
+    --background-color: #f5f7fa;
+    --card-bg: #ffffff;
+    --border-color: #d6dbdf;
+    --success-color: #27ae60;
+    --warning-color: #f39c12;
+    --danger-color: #e74c3c;
+    --critical-color: #c0392b;
+    --low-priority: #2ecc71;
+    --medium-priority: #f39c12;
+    --high-priority: #e74c3c;
+    --critical-priority: #c0392b;
+}
+
+/* High Contrast Theme */
+.high-contrast-theme {
+    --primary-color: #000000;
+    --secondary-color: #333333;
+    --accent-color: #ffffff;
+    --text-color: #ffffff;
+    --background-color: #000000;
+    --card-bg: #333333;
+    --border-color: #ffffff;
+    --success-color: #00ff00;
+    --warning-color: #ffff00;
+    --danger-color: #ff0000;
+    --critical-color: #ff4500;
+    --low-priority: #00ff00;
+    --medium-priority: #ffff00;
+    --high-priority: #ff0000;
+    --critical-priority: #ff4500;
+}
+
+/* Engineering Blue Theme */
+.engineering-blue-theme {
+    --primary-color: #1a3e72;
+    --secondary-color: #2c4e8c;
+    --accent-color: #4a90e2;
+    --text-color: #e6f0ff;
+    --background-color: #0f1c33;
+    --card-bg: #1a3e72;
+    --border-color: #4a90e2;
+    --success-color: #4caf50;
+    --warning-color: #ff9800;
+    --danger-color: #f44336;
+    --critical-color: #d32f2f;
+    --low-priority: #4caf50;
+    --medium-priority: #ff9800;
+    --high-priority: #f44336;
+    --critical-priority: #d32f2f;
+}
