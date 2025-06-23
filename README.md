@@ -91,7 +91,3 @@ This project is open source under the [MIT License](LICENSE).
 ## 📬 Contact
 
 Created by [Tikesh Sahu](https://github.com/tikesh-sahu) – feel free to connect!
-
-```
-
----
